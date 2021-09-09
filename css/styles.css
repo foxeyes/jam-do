@@ -18,6 +18,10 @@
   --nav-w: 220px;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -25,6 +29,7 @@
 html, body {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -61,14 +66,6 @@ code.language-html, code.language-json {
 
 code .hl {
   color: var(--clr-hl);
-}
-
-col-css {
-  display: block;
-  background-color: var(--clr-4);
-  padding: var(--gap-max);
-  width: 100%;
-  max-width: 960px;
 }
 
 nav {
@@ -113,5 +110,10 @@ h3 {
   border-bottom: 1px dashed currentColor;
   font-weight: bold;
   margin-top: var(--gap-max);
+}
+
+section {
+  min-height: 100vh;
+  padding: var(--gap-max);
 }
 
