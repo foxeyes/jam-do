@@ -41,14 +41,9 @@ body {
   font-family: 'Roboto Mono', monospace;
 }
 
-header, footer, main {
-  padding: var(--gap-max);
-  padding-left: calc(var(--nav-w) + var(--gap-max));
-}
-
 main {
-  display: flex;
-  justify-content: center;
+  display: block;
+  padding-left: var(--nav-w);
 }
 
 code {
@@ -78,6 +73,8 @@ nav {
   color: var(--clr-2);
   padding: var(--gap-max);
   min-width: var(--nav-w);
+  background-image: url(../img/bga.svg);
+  background-size: 100% 100%;
 }
 
 .nav-inner {
@@ -113,7 +110,10 @@ h3 {
 }
 
 section {
+  display: block;
   min-height: 100vh;
   padding: var(--gap-max);
+  background-image: url(../img/bga.svg);
+  background-size: 100% 100%;
 }
 
